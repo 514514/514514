@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex 布局</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+        background-image: url("https://ts1.cn.mm.bing.net/th/id/R-C.8759caeaca2fa7d04b074f4b96ca19d0?rik=X1WAcbQvBrGAXg&riu=http%3a%2f%2fphoto-static-api.fotomore.com%2fcreative%2fvcg%2fveer%2fnowarter800%2fnew%2fVCG41N500540815.jpg&ehk=bWN6ji%2fF9i0LbOROR%2fOgh1DipA4Os%2fwHUckeET4l0ek%3d&risl=&pid=ImgRaw&r=0");
+      }
+      /* * {
+            border: 1px solid black;
+        }*/
+      .yinying {
+        box-shadow: #888;
+      }
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mg9 {
+        margin-top: 2px;
+      }
+      .mgr {
+        margin-right: 8px;
+      }
+      .mgt {
+        margin-top: 8px;
+      }
+      .mg7 {
+        margin-left: 8px;
+      }
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+      }
+      .box1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("https://ts1.cn.mm.bing.net/th/id/R-C.8759caeaca2fa7d04b074f4b96ca19d0?rik=X1WAcbQvBrGAXg&riu=http%3a%2f%2fphoto-static-api.fotomore.com%2fcreative%2fvcg%2fveer%2fnowarter800%2fnew%2fVCG41N500540815.jpg&ehk=bWN6ji%2fF9i0LbOROR%2fOgh1DipA4Os%2fwHUckeET4l0ek%3d&risl=&pid=ImgRaw&r=0");
+      }
+
+      .box2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("https://img.tukuppt.com/ad_preview/00/03/43/5c98a8aa84108.jpg!/fw/980");
+      }
+      a:link {
+        color: #000000;
+      } /* 未访问链接*/
+      a:visited {
+        color: #33ccff;
+      } /* 已访问链接 */
+      a:hover {
+        color: #477aff;
+      } /* 鼠标移动到链接上 */
+      a:active {
+        color: #6600ff;
+      } /* 鼠标点击时 */
+    </style>
+  </head>
+  <body class="flex">
+    <div class="flex1 flex column">
+      <div style="height: 150px" class="box2 baise yinying">
+        <h1>四川豪杰众诚建筑工程有限公司</h1>
+        <div style="height: 150px" class="box2 baise yinying text-right">
+          <dl>
+            <dt><h2>联系我们:</h2></dt>
+            <dd><h1>15682123358</h1></dd>
+          </dl>
+        </div>
+      </div>
+      <div class="flex1 flex">
+        <div style="flex: 3" class="flex column mg9">
+          <div class="flex">
+            <div style="height: 50px" class="flex1 baise yinying box">
+              <p>
+                <a href="C:\Users\PC\Desktop/one.index.html"><h1>首页</h1></a>
+              </p>
+            </div>
+            <div style="height: 50px" class="flex1 baise yinying box">
+              <p>
+                <a href="C:\Users\PC\Desktop/four.index.html"
+                  ><h1>设备展示</h1></a
+                >
+              </p>
+            </div>
+            <div style="height: 50px" class="flex1 baise yinying box">
+              <p>
+                <a href="C:\Users\PC\Desktop/three.index.html"
+                  ><h1>材料展示</h1></a
+                >
+              </p>
+            </div>
+            <div style="height: 50px" class="flex1 baise yinying box">
+              <p>
+                <a href="C:\Users\PC\Desktop/tow.index.html"
+                  ><h1>案列展示</h1></a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="column flex"></div>
+          <div style="height: 500px" class="baise mg8 yinying">
+            <img
+              src="C:/Users/PC/Desktop/备用图片/材料1111.jpg"
+              alt="R-C.jpeg"
+              width="1559px"
+              height="500px"
+            />
+          </div>
+          <div class="flex1 flex">
+            <div style="flex: 3" class="flex column mg8">
+              <div class="flex column">
+                <div style="height: 50px" class="box1 baise yinying mg8 flex">
+                  <h2>矩形方管</h2>
+                </div>
+                <div style="height: 50px" class="box1 baise yinying mg8 flex">
+                  <h2>螺旋风管</h2>
+                </div>
+                <div style="height: 50px" class="box1 baise yinying mg8 flex">
+                  <h2>布袋风管</h2>
+                </div>
+                <div style="height: 50px" class="box1 baise yinying mg8 flex">
+                  <h2>复合板风管</h2>
+                </div>
+                <div style="height: 50px" class="box1 baise yinying mg8 flex">
+                  <h2>玻璃钢风管</h2>
+                </div>
+                <div style="height: 50px" class="box1 baise yinying mg8 flex">
+                  <h2>不锈钢风管</h2>
+                </div>
+                <div style="height: 50px" class="box1 baise yinying mg8 flex">
+                  <h2>pvc新风风管</h2>
+                </div>
+                <div style="height: 50px" class="box1 baise yinying mg8 flex">
+                  <h2>pE风管</h2>
+                </div>
+              </div>
+            </div>
+
+            <div style="height: 553px" class="baise mg9 yinying">
+              <img
+                src="C:/Users/PC/Desktop/备用图片\材料44.jpg"
+                alt="R-C.jpeg"
+                width="1330px"
+                height="553px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div style="width: 380px" class="baise mg8 yinying">
+          <img
+            src="C:/Users/PC/Desktop/备用图片\材料333.jpg"
+            alt="tucai.jpg"
+            width="380px"
+            height="400px"
+          />
+        </div>
+        <div style="width: 380px" class="baise mg8 yinying">
+          <img
+            src="C:/Users/PC/Desktop/备用图片\材料2222.jpg"
+            alt="tucai.jpg"
+            width="380px"
+            height="400px"
+          />
+        </div>
+        <div style="width: 380px" class="baise mg8 yinying">
+          <img
+            src="C:\Users\PC\Desktop/备用图片\材料88.jpg"
+            alt="tucai.jpg"
+            width="380px"
+            height="400px"
+          />
+        </div>
+        <div style="width: 370px" class="baise mg8 yinying">
+          <img
+            src="C:\Users\PC\Desktop/备用图片\材料99.jpg"
+            alt="tucai.jpg"
+            width="370px"
+            height="400px"
+          />
+        </div>
+      </div>
+      <div style="height: 150px" class="baise yinying box1">
+        <dl>
+          <dt><h1>联系我们:</h1></dt>
+          <dd><h1>15682123358</h1></dd>
+        </dl>
+        <dl>
+          <dt><h1>邮箱:</h1></dt>
+          <dd><h1>676094135@qq.com</h1></dd>
+        </dl>
+      </div>
+      <!-- 侧边栏 -->
+      <div style="height: 40px" class="baise mgt yinying box">
+        <p>备案号<br /></p>
+      </div>
+      <div style="height: 40px" class="baise mgt yinying box">
+        <p>备案号<br /></p>
+      </div>
+    </div>
+  </body>
+</html>
